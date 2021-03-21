@@ -1,0 +1,38 @@
+@import "../../../../scss/abstract/constant.scss";
+@import "../../../../scss/abstract/mixins.scss";
+
+.temperature {
+  display: flex;
+  text-align: center;
+}
+
+.radio {
+  display: block;
+  width: 44px;
+  height: 44px;
+
+  padding: 13px 0 10px;
+  background-color: $color-primary;
+  @include font($size: 1.4rem, $height: 1.7rem, $weight: bold);
+}
+
+.radio_left-border {
+  cursor: pointer;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.radio_right-border {
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.isNotActive {
+  background-color: $color-opacity;
+}
+
+input[type=radio] {
+  position: absolute;
+  width: 0px;
+  top: 0;
+  z-index: -1;
+}

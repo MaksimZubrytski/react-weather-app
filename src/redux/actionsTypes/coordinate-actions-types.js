@@ -1,0 +1,4 @@
+export const SET_LOCATION_DATA = 'SET_LOCATION_DATA';
+export const SET_SEARCH_DATA = 'SET_SEARCH_DATA';
+export const TOGGLE_IS_FETCHING = 'TOGGLE_IS_FETCHING';
+export const SET_ERROR = 'SET_ERROR';

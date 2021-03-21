@@ -1,0 +1,30 @@
+@import "../../../../scss/abstract/constant.scss";
+@import "../../../../scss/abstract/mixins.scss";
+
+.select {
+  display: block;
+  width: 71px;
+  height: 44px;
+  padding-top: 13px;
+  padding-left: 15px;
+  padding-bottom: 14px;
+
+  appearance: none;
+  background: url(../../../../assets/img/icons/stroke.svg) no-repeat right;
+  background-position-x: calc(100% - 15px);
+  background-color: $color-primary;
+
+  border-radius: 5px;
+  color: #ffffff;
+  @include font($size: 1.4rem, $height: 1.7rem, $weight: bold);
+  text-transform: uppercase;
+  }
+
+.select option {
+  background-color: $color-additional;
+  @include font($size: 1.4rem, $height: 1.7rem, $weight: bold);
+}
+
+.language__select {
+  margin-right: 10px;
+}

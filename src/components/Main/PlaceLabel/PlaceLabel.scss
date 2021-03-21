@@ -1,0 +1,7 @@
+@import '../../../scss/abstract/mixins.scss';
+
+.placelabel__title {
+  margin-top: 57px;
+  @include font($size: 4.4rem, $height: 5.4rem, $weight: bold);
+  text-transform: uppercase;
+}

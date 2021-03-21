@@ -1,0 +1,1 @@
+export const SET_DEGREE_TYPE = 'SET_DEGREE_TYPE';

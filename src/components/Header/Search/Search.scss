@@ -1,0 +1,35 @@
+@import "../../../scss/abstract/constant.scss";
+@import '../../../scss/abstract/mixins.scss';
+
+.search__form {
+  position: relative;
+  width: 375px;
+  margin: 0 auto;
+}
+
+.search__input {
+  width: 274px;
+  height: 44px;
+  padding-left: 15px;
+  border: 1px solid rgba(228, 227, 227, 0.2);
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  background: $color-opacity;
+  color: $color-text;
+}
+
+.search__input::placeholder {
+  color: $color-text;
+}
+
+.search__button {
+  width: 101px;
+  height: 44px;
+  border: none;
+  background: $color-primary;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  @include font($size: 1.4rem, $height: 1.7rem, $weight: bold);
+  color: $color-text;
+  text-transform: uppercase;
+}

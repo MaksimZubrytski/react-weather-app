@@ -1,0 +1,15 @@
+@import "../../scss/abstract/constant.scss";
+
+.header {
+  padding-top: 40px;
+}
+
+.options {
+  display: flex;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
