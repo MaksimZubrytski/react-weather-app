@@ -1,4 +1,6 @@
-import { COORDINATES_URL, WEATHER_URL, SEARCH_URL } from '../constants/someApi';
+import { COORDINATES_URL } from '../constants/coordinatesApi';
+import { WEATHER_URL } from '../constants/weatherApi';
+import { SEARCH_URL } from '../constants/searchApi';
 
 export const coordinatesApiBuildUrl = () => (
   `${COORDINATES_URL}`
@@ -10,4 +12,4 @@ export const weatherApiBuildUrl = (lat, lon, lang) => (
 
 export const searchApiBuildUrl = (city) => (
   `${SEARCH_URL}/json?q=${city}&key=bc66474e55b846ee9ea7901834f7a0a1&pretty=1&no_annotations=1`
-)
+);

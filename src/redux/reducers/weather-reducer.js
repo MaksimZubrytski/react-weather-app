@@ -7,14 +7,14 @@ const initialState = {
 
 const weatherReducer = (state = initialState, action) => {
   switch (action.type) {
-  case SET_WEATHER_DATA:
-    return {
-      ...state,
-      todayData: action.todayData,
-      dailyData: action.dailyData,
-    };
-  default:
-    return state;
+    case SET_WEATHER_DATA:
+      return {
+        ...state,
+        todayData: action.todayData,
+        dailyData: action.dailyData,
+      };
+    default:
+      return state;
   }
 };
 

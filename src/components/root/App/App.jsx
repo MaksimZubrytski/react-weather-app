@@ -14,21 +14,25 @@ const App = (props) => {
     language,
     isError,
   } = { ...props };
+
   useEffect(() => {
     initAppStateTC(language);
-  }, [])
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
   const catchingAnError = () => {
     if (isError) {
-      return <ErrorBoundary />
+      return <ErrorBoundary />;
     }
-    return (isFetching ? <Preloader /> : <Main />)
-  }
+
+    return (isFetching ? <Preloader /> : <Main />);
+  };
+
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
       {catchingAnError()}
     </div>
-  )
+  );
 };
 
 const mapStateToProps = (state) => ({

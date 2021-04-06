@@ -11,7 +11,7 @@ export const converterCoordinate = (data) => (
 );
 
 export const converterWeather = (data) => (
-   data.map((dataItem) => (
+  data.map((dataItem) => (
     new Weather({
       dt: dataItem.dt,
       temp: dataItem.temp.day,
@@ -33,7 +33,5 @@ export const converterCityCoordinate = (data) => (
 );
 
 export const converterBackground = (data) => (
-  new Background({
-    background: data.urls.full,
-  })
+  new Background({ background: data.urls.full })
 );

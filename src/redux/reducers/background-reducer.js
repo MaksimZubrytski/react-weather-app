@@ -1,8 +1,6 @@
-import { SET_BACKGROUND } from '../actionsTypes/background-actions-types'
+import { SET_BACKGROUND } from '../actionsTypes/background-actions-types';
 
-const initialState = {
-  backgroundURL: null,
-};
+const initialState = { backgroundURL: null };
 
 const backgroundReducer = (state = initialState, action) => {
   switch (action.type) {

@@ -19,19 +19,20 @@ const WeatherForecast = (props) => {
         units={units}
         language={language}
       />
-    ))
+    ));
   const formatDayShortCards = dailyData
-    .map((day) => <DayForecastShort units={units} day={day} key={day.dt} language={language} />)
+    .map((day) => <DayForecastShort units={units} day={day} key={day.dt} language={language} />);
+
   return (
     <div>
       {formatDayFullCards[0]}
-      <div className="layout-3-column">
+      <div className='layout-3-column'>
         {formatDayShortCards[1]}
         {formatDayShortCards[2]}
         {formatDayShortCards[3]}
       </div>
     </div>
-  )
+  );
 };
 
 const mapStateToProps = (state) => ({
@@ -41,5 +42,4 @@ const mapStateToProps = (state) => ({
   language: state.languageData.language,
 });
 
-export default connect(mapStateToProps,
-  { })(WeatherForecast);
+export default connect(mapStateToProps, null)(WeatherForecast);

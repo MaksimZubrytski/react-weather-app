@@ -1,8 +1,6 @@
-import { SET_LANGUAGE } from '../actionsTypes/language-actions-types'
+import { SET_LANGUAGE } from '../actionsTypes/language-actions-types';
 
-const initialState = {
-  language: 'Ru',
-};
+const initialState = { language: 'Ru' };
 
 const languageReducer = (state = initialState, action) => {
   switch (action.type) {

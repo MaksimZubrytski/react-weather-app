@@ -1,7 +1,5 @@
 export class Background {
-  constructor({
-    background,
-  }) {
+  constructor({ background }) {
     this.background = background;
   }
 }

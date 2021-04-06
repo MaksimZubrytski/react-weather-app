@@ -5,10 +5,10 @@ import PlaceLabel from './PlaceLabel/PlaceLabel';
 import WeatherForecast from './WeatherForecast/WeatherForecast';
 
 const Main = () => (
-  <main className="main">
-    <div className="wrapper main__wrapper">
+  <main className='main'>
+    <div className='wrapper main__wrapper'>
       <PlaceLabel />
-      <div className="container">
+      <div className='container'>
         <WeatherForecast />
         <Geolocatoin />
       </div>

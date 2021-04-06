@@ -1,6 +1,5 @@
-import {
-  SET_LOCATION_DATA, SET_SEARCH_DATA, SET_ERROR, TOGGLE_IS_FETCHING,
-} from '../actionsTypes/coordinate-actions-types';
+import { SET_LOCATION_DATA, SET_SEARCH_DATA, SET_ERROR, TOGGLE_IS_FETCHING }
+  from '../actionsTypes/coordinate-actions-types';
 
 const initialState = {
   userCity: null,
@@ -28,10 +27,10 @@ const coordinatesReducer = (state = initialState, action) => {
         ...action.data,
       };
     case SET_ERROR: {
-      return { ...state, isError: action.isError }
+      return { ...state, isError: action.isError };
     }
     case TOGGLE_IS_FETCHING: {
-      return { ...state, isFetching: action.isFetching }
+      return { ...state, isFetching: action.isFetching };
     }
     default:
       return state;

@@ -14,17 +14,18 @@ const Language = (props) => {
   } = { ...props };
 
   const handleChange = (e) => {
-    setLanguageAC(e.target.value)
-    getWeatherAC(latitude, longitude, e.target.value)
-  }
+    setLanguageAC(e.target.value);
+    getWeatherAC(latitude, longitude, e.target.value);
+  };
+
   return (
-    <div className="language">
-      <select defaultValue={language} className="select language__select" onChange={handleChange}>
-        <option value="En">En</option>
-        <option value="Ru">Ru</option>
+    <div className='language'>
+      <select defaultValue={language} className='select language__select' onChange={handleChange}>
+        <option value='En'>En</option>
+        <option value='Ru'>Ru</option>
       </select>
     </div>
-  )
+  );
 };
 
 const mapStateToProps = (state) => ({

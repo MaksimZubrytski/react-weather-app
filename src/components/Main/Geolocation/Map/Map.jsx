@@ -9,9 +9,7 @@ mapboxgl.workerClass = MapboxWorker;
 mapboxgl.accessToken = 'pk.eyJ1IjoiZG9uY2FybGVvbiIsImEiOiJja20wbjZuc2kxcG5mMm9vNnhqbTFvbG1qIn0.HMfhNN0ixxdzhTKkTRNJkA';
 
 const Maps = (props) => {
-  const {
-    latitude, longitude,
-  } = { ...props };
+  const { latitude, longitude } = { ...props };
   const mapContainer = useRef();
 
   const [lng, setLng] = useState(longitude);
@@ -33,10 +31,11 @@ const Maps = (props) => {
     });
 
     return () => map.remove();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
   return (
     <div>
-      <div className="map-container" ref={mapContainer} />
+      <div className='map-container' ref={mapContainer} />
     </div>
   );
 };
@@ -46,4 +45,4 @@ const mapStateToProps = (state) => ({
   longitude: state.coordinates.longitude,
 });
 
-export default connect(mapStateToProps, { })(Maps);
+export default connect(mapStateToProps, null)(Maps);

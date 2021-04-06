@@ -6,9 +6,9 @@ import './Header.scss';
 import Search from './Search/Search';
 
 const Header = () => (
-  <header className="header">
-    <div className="wrapper header__wrapper">
-      <div className="options">
+  <header className='header'>
+    <div className='wrapper header__wrapper'>
+      <div className='options'>
         <Refresh />
         <Language />
         <Temperature />

@@ -11,13 +11,13 @@ const Refresh = (props) => {
 
   const handeSubmit = () => {
     initAppStateTC(language);
-  }
+  };
 
   return (
-    <div className="refresh">
-      <button className="button refresh__button" aria-label="refresh" type="button" onClick={handeSubmit} />
+    <div className='refresh'>
+      <button className='button refresh__button' aria-label='refresh' type='button' onClick={handeSubmit} />
     </div>
-  )
+  );
 };
 
 const mapStateToProps = (state) => ({
